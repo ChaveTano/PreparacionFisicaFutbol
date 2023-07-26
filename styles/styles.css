@@ -35,7 +35,7 @@
 }
 
 .inicio {
-  background-color: #077508;
+  background-color: var(--verdeClaro);
   transition: transform 0.3s ease;
 }
 
