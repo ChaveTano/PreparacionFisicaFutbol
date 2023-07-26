@@ -96,7 +96,7 @@
   margin-top: 5rem;
   font-family: "Carter One";
   text-align: center;
-  font-size: 8em;
+  font-size: 7.5em;
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
@@ -403,10 +403,6 @@ i:hover {
 }
 
 @media (max-width: 1200px) {
-  .tituloInicio {
-    font-size: 7.5rem;
-  }
-
   .contenedorArticulos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
