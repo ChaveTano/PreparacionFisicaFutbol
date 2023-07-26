@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Carter+One&family=Roboto+Slab:wght@200&family=Sedgwick+Ave&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --verdeOscuro: #077508;
+  --verde: #1c870f;
+  --verdeClaro: #4db021;
+}
+
+.navbar {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  width: 100%;
+  height: 5rem;
+}
+
+.navbar-nav a {
+  font-family: "Black Ops One";
+  color: white;
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0;
+  height: 100%;
+  line-height: 5rem;
+}
+
+.inicio {
+  background-color: #077508;
+  transition: transform 0.3s ease;
+}
+
+.inicio:hover {
+  transform: scale(1.1);
+}
+
+.store {
+  background-color: var(--verde);
+  transition: transform 0.3s ease;
+}
+
+.store:hover {
+  transform: scale(1.1);
+}
+
+.trayectoria {
+  background-color: var(--verdeOscuro);
+  transition: transform 0.3s ease;
+}
+
+.trayectoria:hover {
+  transform: scale(1.1);
+}
+
+.servicios {
+  background-color: var(--verdeClaro);
+  transition: transform 0.3s ease;
+}
+
+.servicios:hover {
+  transform: scale(1.1);
+}
+
+.contacto {
+  background-color: var(--verde);
+  transition: transform 0.3s ease;
+}
+
+.contacto:hover {
+  transform: scale(1.1);
+}
+
+.contenedorTituloInicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.imagenInicio {
+  margin: -1rem;
+  background-image: url("../img/fondoInicio1.png");
+  background-size: 100%;
+}
+
+.tituloInicio {
+  margin-top: 5rem;
+  font-family: "Carter One";
+  text-align: center;
+  font-size: 10rem;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nosotros {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--verdeClaro);
+  width: 100%;
+  padding: 2rem;
+}
+
+.nosotros img {
+  border-radius: 50%;
+  width: 20%;
+}
+
+.nosotros p {
+  font-family: "Roboto Slab";
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  padding-top: 3rem;
+  margin: 1rem;
+}
+
+footer {
+  background-color: var(--verdeOscuro);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+footer img {
+  border-radius: 50%;
+  width: 5rem;
+}
+
+footer div {
+  border-top: 1px solid #4db021;
+}
+
+.links {
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.bodyStore {
+  background-color: var(--verdeClaro);
+}
+
+.contenedorBuscador {
+  background-color: #4db021;
+  padding: 1rem;
+}
+
+.buscador {
+  width: 25%;
+}
+
+.btnBuscador {
+  background-color: white;
+}
+
+.btnBuscador:hover {
+  background-color: #077508;
+}
+
+.contenedorArticulos {
+  background-color: #4db021;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". . . .";
+  gap: 2rem;
+  margin: 0 2rem;
+  padding-bottom: 1rem;
+}
+
+.articulo {
+  border: 5px solid var(--verdeOscuro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  text-align: center;
+  font-family: "Carter One";
+}
+
+.btnComprar {
+  background-color: #1c870f;
+}
+
+.btnComprar:hover {
+  background-color: #077508;
+}
+
+.mainTrayectoria {
+  background-color: #4db021;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contenedorTrabajos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contenedorTrabajos h1 {
+  color: white;
+  font-family: "Roboto Slab";
+}
+
+.contenedorTrabajos h3 {
+  font-family: "Carter One";
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 2rem;
+  background-color: white;
+  color: #1c870f;
+  text-align: center;
+}
+
+.contenedorTrabajos p {
+  font-size: 2rem;
+  width: 50%;
+  font-family: "Roboto Slab";
+  color: white;
+}
+
+.contenedorTrabajos img {
+  width: 12rem;
+}
+
+.flechaBlanca {
+  width: 20rem;
+  align-self: center;
+}
+
+.mainServicios {
+  background-color: #4db021;
+  padding: 5rem 20rem;
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjetaDea2 {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.cardServicios {
+  width: 50%;
+  height: 40rem;
+  transition: transform 0.3s ease;
+}
+
+.cardServicios:hover {
+  transform: scale(1.1);
+}
+
+.card-bodyServicios {
+  background-color: #077508;
+  color: white;
+  font-family: "Carter One";
+}
+
+.card-bodyServicios h5 {
+  font-size: 1.8rem;
+}
+
+.card-bodyServicios p {
+  font-size: 1.2rem;
+}
+
+.btnServicios {
+  background-color: white;
+  color: #077508;
+  border: none;
+}
+
+.btnServicios:hover {
+  background-color: #4db021;
+}
+
+.imgServicios {
+  height: 75%;
+}
+
+.contenedorContacto {
+  display: flex;
+  height: 100vh;
+}
+
+.datos {
+  width: 50%;
+  background-color: #4db021;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Black Ops One";
+  padding: 2rem;
+  gap: 1.5rem;
+}
+
+.datos h2 {
+  font-size: 3rem;
+}
+
+.datos p {
+  font-size: 2rem;
+}
+
+i {
+  font-size: 2rem;
+  color: #077508;
+}
+
+i:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.lineaDivisora {
+  border-bottom: 5px solid var(--verdeOscuro);
+  width: 75%;
+}
+
+.formulario {
+  width: 50%;
+  background-color: #1c870f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Black Ops One";
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.formulario h2 {
+  font-size: 3rem;
+}
+
+.redes {
+  display: flex;
+  gap: 3rem;
+}
+
+.contenedorFormulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 50%;
+}
+
+.contenedorFormulario input {
+  height: 2rem;
+}
+
+.contenedorFormulario label {
+  font-size: 1.5rem;
+}
+
+.contenedorFormulario select {
+  height: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .tituloInicio {
+    font-size: 7.5rem;
+  }
+
+  .contenedorArticulos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . ."
+      ". . .";
+  }
+}
+
+@media (max-width: 768px) {
+  .tituloInicio {
+    font-size: 3.5rem;
+  }
+
+  .nosotros p {
+    font-size: 1.5rem;
+  }
+
+  .navbar {
+    z-index: 9999;
+  }
+
+  .fondoBoton {
+    background-color: #4db021;
+  }
+
+  .navbar-toggler {
+    background-color: #077508;
+  }
+
+  .contenedorArticulos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      ". . "
+      ". . "
+      ". . "
+      ". . "
+      ". . "
+      ". . ";
+  }
+
+  .buscador {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buscador {
+    width: 100%;
+  }
+
+  .contenedorArticulos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
