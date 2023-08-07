@@ -1,0 +1,46 @@
+.mainTrayectoria {
+  background-color: #4db021;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contenedorTrabajos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  h1 {
+    color: white;
+    font-family: "Roboto Slab";
+  }
+
+  h3 {
+    font-family: "Carter One";
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 2rem;
+    background-color: white;
+    color: #1c870f;
+    text-align: center;
+  }
+
+  p {
+    font-size: 2rem;
+    width: 50%;
+    font-family: "Roboto Slab";
+    color: white;
+  }
+
+  img {
+    width: 12rem;
+  }
+}
+
+.flechaBlanca {
+  width: 20rem;
+  align-self: center;
+}

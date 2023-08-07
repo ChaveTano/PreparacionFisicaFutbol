@@ -1,0 +1,59 @@
+.bodyStore {
+  background-color: var(--verdeClaro);
+}
+
+.contenedorBuscador {
+  background-color: #4db021;
+  padding: 1rem;
+}
+
+.buscador {
+  width: 25%;
+}
+
+.btnBuscador {
+  background-color: white;
+
+  &:hover {
+    background-color: #077508;
+  }
+}
+
+.contenedorArticulos {
+  background-color: #4db021;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". . . .";
+  gap: 2rem;
+  margin: 0 2rem;
+  padding-bottom: 1rem;
+}
+
+.articulo {
+  border: 5px solid var(--verdeOscuro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  text-align: center;
+  font-family: "Carter One";
+}
+
+.btnComprar {
+  background-color: #1c870f;
+
+  &:hover {
+    background-color: #077508;
+  }
+}

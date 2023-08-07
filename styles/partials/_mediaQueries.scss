@@ -1,0 +1,69 @@
+@media (max-width: 1200px) {
+  .contenedorArticulos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . ."
+      ". . .";
+  }
+}
+
+@media (max-width: 768px) {
+  .tituloInicio {
+    font-size: 3.5rem;
+  }
+
+  .nosotros p {
+    font-size: 1.5rem;
+  }
+
+  .navbar {
+    z-index: 9999;
+  }
+
+  .fondoBoton {
+    background-color: #4db021;
+  }
+
+  .navbar-toggler {
+    background-color: #077508;
+  }
+
+  .contenedorArticulos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      ". . "
+      ". . "
+      ". . "
+      ". . "
+      ". . "
+      ". . ";
+  }
+
+  .buscador {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buscador {
+    width: 100%;
+  }
+
+  .contenedorArticulos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
