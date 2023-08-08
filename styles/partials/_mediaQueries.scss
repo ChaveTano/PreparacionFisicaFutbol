@@ -9,6 +9,62 @@
       ". . ."
       ". . .";
   }
+
+  .contenedorTrabajos {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+
+    img {
+      width: 8rem;
+    }
+  }
+
+  .flechaBlanca {
+    width: 15rem;
+  }
+
+  .card-bodyServicios {
+    h5 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .datos {
+    gap: 1rem;
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .formulario {
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  .contenedorFormulario{
+    width: 100%;
+  }
+
+  
 }
 
 @media (max-width: 768px) {
@@ -48,6 +104,46 @@
   .buscador {
     width: 50%;
   }
+
+  .contenedorTrabajos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    margin-top: -1rem;
+
+    p {
+      width: 100%;
+    }
+  }
+
+  .mainServicios {
+    padding: 5rem;
+  }
+
+  .card-bodyServicios {
+    h5 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 0, 8rem;
+    }
+  }
+
+  .contenedorContacto {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .formulario {
+    width: 100%;
+  }
+
+  .datos {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -65,5 +161,38 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+  }
+
+  .contenedorTrabajos {
+    h3 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    img {
+      width: 6rem;
+    }
+  }
+
+  .flechaBlanca {
+    width: 10rem;
+  }
+
+  .mainServicios {
+    padding: 2rem 0;
+  }
+
+  .tarjetaDea2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .cardServicios {
+    width: 80%;
   }
 }

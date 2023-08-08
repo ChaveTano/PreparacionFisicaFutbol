@@ -220,7 +220,7 @@
 
 .mainServicios {
   background-color: #4db021;
-  padding: 5rem 20rem;
+  padding: 5rem 10rem;
   gap: 3rem;
   display: flex;
   flex-direction: column;
@@ -234,7 +234,6 @@
 
 .cardServicios {
   width: 50%;
-  height: 40rem;
   transition: transform 0.3s ease;
 }
 .cardServicios:hover {
@@ -315,9 +314,11 @@ i:hover {
   font-family: "Black Ops One";
   padding: 2rem;
   gap: 2rem;
+  text-align: center;
 }
 .formulario h2 {
   font-size: 3rem;
+  margin-top: -2rem;
 }
 
 .redes {
@@ -376,6 +377,42 @@ footer div {
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: ". . ." ". . ." ". . ." ". . .";
   }
+  .contenedorTrabajos h1 {
+    font-size: 1.5rem;
+  }
+  .contenedorTrabajos h3 {
+    font-size: 1.4rem;
+  }
+  .contenedorTrabajos p {
+    font-size: 1.4rem;
+  }
+  .contenedorTrabajos img {
+    width: 8rem;
+  }
+  .flechaBlanca {
+    width: 15rem;
+  }
+  .card-bodyServicios h5 {
+    font-size: 1.5rem;
+  }
+  .card-bodyServicios p {
+    font-size: 1rem;
+  }
+  .datos {
+    gap: 1rem;
+  }
+  .datos h2 {
+    font-size: 3rem;
+  }
+  .datos p {
+    font-size: 1.5rem;
+  }
+  .formulario h2 {
+    font-size: 3rem;
+  }
+  .contenedorFormulario {
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
   .tituloInicio {
@@ -402,6 +439,37 @@ footer div {
   .buscador {
     width: 50%;
   }
+  .contenedorTrabajos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    margin-top: -1rem;
+  }
+  .contenedorTrabajos p {
+    width: 100%;
+  }
+  .mainServicios {
+    padding: 5rem;
+  }
+  .card-bodyServicios h5 {
+    font-size: 1.2rem;
+  }
+  .card-bodyServicios p {
+    font-size: 0, 8rem;
+  }
+  .contenedorContacto {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .formulario {
+    width: 100%;
+  }
+  .datos {
+    width: 100%;
+  }
 }
 @media (max-width: 480px) {
   .links {
@@ -416,5 +484,29 @@ footer div {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+  }
+  .contenedorTrabajos h3 {
+    font-size: 1rem;
+  }
+  .contenedorTrabajos p {
+    font-size: 1.2rem;
+  }
+  .contenedorTrabajos img {
+    width: 6rem;
+  }
+  .flechaBlanca {
+    width: 10rem;
+  }
+  .mainServicios {
+    padding: 2rem 0;
+  }
+  .tarjetaDea2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .cardServicios {
+    width: 80%;
   }
 }/*# sourceMappingURL=styles.css.map */

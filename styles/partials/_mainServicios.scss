@@ -1,6 +1,6 @@
 .mainServicios {
   background-color: #4db021;
-  padding: 5rem 20rem;
+  padding: 5rem 10rem;
   gap: 3rem;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,6 @@
 
 .cardServicios {
   width: 50%;
-  height: 40rem;
   transition: transform 0.3s ease;
 
   &:hover {
