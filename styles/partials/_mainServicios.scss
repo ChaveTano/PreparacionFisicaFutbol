@@ -1,7 +1,7 @@
 .mainServicios {
-  background-color: #4db021;
+  background-color: var(--oscuro);
   padding: 5rem 10rem;
-  gap: 3rem;
+  gap: 5rem;
   display: flex;
   flex-direction: column;
 }
@@ -9,20 +9,50 @@
 .tarjetaDea2 {
   display: flex;
   flex-direction: row;
-  gap: 5rem;
+  gap: 7rem;
+  justify-content: center;
 }
 
 .cardServicios {
-  width: 50%;
+  width: 40%;
   transition: transform 0.3s ease;
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 
   &:hover {
     transform: scale(1.1);
   }
 }
 
+ @-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
 .card-bodyServicios {
-  background-color: #077508;
+  background-color: var(--claro);
   color: white;
   font-family: "Carter One";
 
@@ -31,17 +61,17 @@
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 }
 
 .btnServicios {
   background-color: white;
-  color: #077508;
+  color: var(--oscuro);
   border: none;
 
   &:hover {
-    background-color: #4db021;
+    background-color: var(--intermedio);
   }
 }
 

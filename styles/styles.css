@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Carter+One&family=Roboto+Slab:wght@200&family=Sedgwick+Ave&display=swap");
 :root {
-  --verdeOscuro: #001011;
-  --verde: #093A3E;
-  --verdeClaro: #2C666E;
+  --oscuro: #131515;
+  --intermedio: #1B264F;
+  --claro: #274690;
 }
 
 * {
@@ -33,43 +33,48 @@
 }
 
 .inicio {
-  background-color: var(--verdeClaro);
+  background-color: var(--claro);
   transition: transform 0.3s ease;
 }
 .inicio:hover {
   transform: scale(1.1);
+  color: var(--oscuro);
 }
 
 .store {
-  background-color: var(--verde);
+  background-color: var(--intermedio);
   transition: transform 0.3s ease;
 }
 .store:hover {
   transform: scale(1.1);
+  color: var(--claro);
 }
 
 .trayectoria {
-  background-color: var(--verdeOscuro);
+  background-color: var(--oscuro);
   transition: transform 0.3s ease;
 }
 .trayectoria:hover {
   transform: scale(1.1);
+  color: var(--claro);
 }
 
 .servicios {
-  background-color: var(--verdeClaro);
+  background-color: var(--claro);
   transition: transform 0.3s ease;
 }
 .servicios:hover {
   transform: scale(1.1);
+  color: var(--oscuro);
 }
 
 .contacto {
-  background-color: var(--verde);
+  background-color: var(--intermedio);
   transition: transform 0.3s ease;
 }
 .contacto:hover {
   transform: scale(1.1);
+  color: var(--claro);
 }
 
 .contenedorVideo {
@@ -151,7 +156,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--verdeClaro);
+  background-color: var(--claro);
   width: 100%;
   padding: 2rem;
 }
@@ -169,7 +174,7 @@
 }
 
 .mainTrayectoria {
-  background-color: #4db021;
+  background-color: var(--intermedio);
   padding: 5rem;
   display: flex;
   flex-direction: column;
@@ -182,6 +187,9 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  background-color: var(--claro);
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px 10px var(--oscuro);
 }
 .contenedorTrabajos h1 {
   color: white;
@@ -193,7 +201,7 @@
   border-radius: 50%;
   padding: 2rem;
   background-color: white;
-  color: #1c870f;
+  color: var(--claro);
   text-align: center;
 }
 .contenedorTrabajos p {
@@ -206,17 +214,28 @@
   width: 12rem;
 }
 
+.rotate-center {
+  animation: rotate-center 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 3 both;
+}
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .flechaBlanca {
   width: 20rem;
   align-self: center;
 }
 
 .bodyStore {
-  background-color: var(--verdeClaro);
+  background-color: var(--claro);
 }
 
 .contenedorBuscador {
-  background-color: #4db021;
+  background-color: var(--claro);
   padding: 1rem;
 }
 
@@ -228,11 +247,11 @@
   background-color: white;
 }
 .btnBuscador:hover {
-  background-color: #077508;
+  background-color: var(--oscuro);
 }
 
 .contenedorArticulos {
-  background-color: #4db021;
+  background-color: var(--claro);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -248,8 +267,69 @@
   flex-direction: column;
   align-items: center;
   background-color: white;
+  animation: slit-in-vertical 0.45s ease-out both;
 }
 
+.articulo1 {
+  animation-delay: 0.5s;
+}
+
+.articulo2 {
+  animation-delay: 1s;
+}
+
+.articulo3 {
+  animation-delay: 1.5s;
+}
+
+.articulo4 {
+  animation-delay: 2s;
+}
+
+.articulo5 {
+  animation-delay: 2.5s;
+}
+
+.articulo6 {
+  animation-delay: 3s;
+}
+
+.articulo7 {
+  animation-delay: 3.5s;
+}
+
+.articulo8 {
+  animation-delay: 4s;
+}
+
+.articulo9 {
+  animation-delay: 4.5s;
+}
+
+.articulo10 {
+  animation-delay: 5s;
+}
+
+.articulo11 {
+  animation-delay: 5.5s;
+}
+
+.articulo12 {
+  animation-delay: 6s;
+}
+@keyframes slit-in-vertical {
+  0% {
+    transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0;
+  }
+  54% {
+    transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateZ(0) rotateY(0);
+  }
+}
 .card {
   display: flex;
   align-items: center;
@@ -260,16 +340,16 @@
 }
 
 .btnComprar {
-  background-color: #1c870f;
+  background-color: var(--intermedio);
 }
 .btnComprar:hover {
-  background-color: #077508;
+  background-color: var(--claro);
 }
 
 .mainServicios {
-  background-color: #4db021;
+  background-color: var(--oscuro);
   padding: 5rem 10rem;
-  gap: 3rem;
+  gap: 5rem;
   display: flex;
   flex-direction: column;
 }
@@ -277,19 +357,30 @@
 .tarjetaDea2 {
   display: flex;
   flex-direction: row;
-  gap: 5rem;
+  gap: 7rem;
+  justify-content: center;
 }
 
 .cardServicios {
-  width: 50%;
+  width: 40%;
   transition: transform 0.3s ease;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .cardServicios:hover {
   transform: scale(1.1);
 }
-
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 .card-bodyServicios {
-  background-color: #077508;
+  background-color: var(--claro);
   color: white;
   font-family: "Carter One";
 }
@@ -297,16 +388,16 @@
   font-size: 1.8rem;
 }
 .card-bodyServicios p {
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 .btnServicios {
   background-color: white;
-  color: #077508;
+  color: var(--oscuro);
   border: none;
 }
 .btnServicios:hover {
-  background-color: #4db021;
+  background-color: var(--intermedio);
 }
 
 .imgServicios {
@@ -320,7 +411,7 @@
 
 .datos {
   width: 50%;
-  background-color: #4db021;
+  background-color: var(--claro);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -339,7 +430,7 @@
 
 i {
   font-size: 2rem;
-  color: #077508;
+  color: var(--oscuro);
 }
 i:hover {
   cursor: pointer;
@@ -353,7 +444,7 @@ i:hover {
 
 .formulario {
   width: 50%;
-  background-color: #1c870f;
+  background-color: var(--intermedio);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -391,7 +482,7 @@ i:hover {
 }
 
 footer {
-  background-color: var(--verdeOscuro);
+  background-color: var(--oscuro);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -404,7 +495,7 @@ footer img {
   width: 5rem;
 }
 footer div {
-  border-top: 1px solid var(--verdeClaro);
+  border-top: 1px solid var(--claro);
 }
 
 .links {
@@ -416,6 +507,10 @@ footer div {
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
+}
+
+p {
+  color: var(--intermedio);
 }
 
 @media (max-width: 1200px) {

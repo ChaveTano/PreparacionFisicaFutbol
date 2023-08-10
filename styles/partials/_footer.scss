@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--verdeOscuro);
+  background-color: var(--oscuro);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -13,7 +13,7 @@ footer {
   }
 
   div {
-    border-top: 1px solid var(--verdeClaro);
+    border-top: 1px solid var(--claro);
   }
 }
 
@@ -27,4 +27,8 @@ footer {
     color: white;
     font-size: 1.2rem;
   }
+}
+
+p{
+  color: var(--intermedio);
 }

@@ -1,5 +1,5 @@
 .mainTrayectoria {
-  background-color: #4db021;
+  background-color: var(--intermedio);
   padding: 5rem;
   display: flex;
   flex-direction: column;
@@ -12,6 +12,9 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  background-color: var(--claro);
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px 10px var(--oscuro) ;
 
   h1 {
     color: white;
@@ -24,7 +27,7 @@
     border-radius: 50%;
     padding: 2rem;
     background-color: white;
-    color: #1c870f;
+    color: var(--claro);
     text-align: center;
   }
 
@@ -37,6 +40,33 @@
 
   img {
     width: 12rem;
+  }
+}
+
+.rotate-center {
+  -webkit-animation: rotate-center 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 3
+    both;
+  animation: rotate-center 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 3 both;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 

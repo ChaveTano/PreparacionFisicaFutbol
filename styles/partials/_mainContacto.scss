@@ -5,7 +5,7 @@
 
 .datos {
   width: 50%;
-  background-color: #4db021;
+  background-color: var(--claro);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +26,7 @@
 
 i {
   font-size: 2rem;
-  color: #077508;
+  color: var(--oscuro);
 
   &:hover {
     cursor: pointer;
@@ -41,7 +41,7 @@ i {
 
 .formulario {
   width: 50%;
-  background-color: #1c870f;
+  background-color: var(--intermedio);
   display: flex;
   flex-direction: column;
   align-items: center;

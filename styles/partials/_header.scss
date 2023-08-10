@@ -21,46 +21,51 @@
 }
 
 .inicio {
-  background-color: var(--verdeClaro);
+  background-color: var(--claro);
   transition: transform 0.3s ease;
 
   &:hover {
     transform: scale(1.1);
+    color: var(--oscuro);
   }
 }
 
 .store {
-  background-color: var(--verde);
+  background-color: var(--intermedio);
   transition: transform 0.3s ease;
 
   &:hover {
     transform: scale(1.1);
+    color: var(--claro);
   }
 }
 
 .trayectoria {
-  background-color: var(--verdeOscuro);
+  background-color: var(--oscuro);
   transition: transform 0.3s ease;
 
   &:hover {
     transform: scale(1.1);
+    color: var(--claro);
   }
 }
 
 .servicios {
-  background-color: var(--verdeClaro);
+  background-color: var(--claro);
   transition: transform 0.3s ease;
 
   &:hover {
     transform: scale(1.1);
+    color: var(--oscuro);
   }
 }
 
 .contacto {
-  background-color: var(--verde);
+  background-color: var(--intermedio);
   transition: transform 0.3s ease;
 
   &:hover {
     transform: scale(1.1);
+    color: var(--claro);
   }
 }
