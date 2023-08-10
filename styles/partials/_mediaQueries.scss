@@ -1,4 +1,12 @@
 @media (max-width: 1200px) {
+  .contenedorVideo {
+    .contenedorTitulo {
+      h1 {
+        font-size: 6rem;
+      }
+    }
+  }
+
   .contenedorArticulos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -54,22 +62,23 @@
   }
 
   .formulario {
-
     h2 {
       font-size: 3rem;
     }
   }
 
-  .contenedorFormulario{
+  .contenedorFormulario {
     width: 100%;
   }
-
-  
 }
 
 @media (max-width: 768px) {
-  .tituloInicio {
-    font-size: 3.5rem;
+  .contenedorVideo {
+    .contenedorTitulo {
+      h1 {
+        font-size: 4rem;
+      }
+    }
   }
 
   .nosotros p {
@@ -81,11 +90,11 @@
   }
 
   .fondoBoton {
-    background-color: #4db021;
+    background-color: var(--verdeOscuro);
   }
 
   .navbar-toggler {
-    background-color: #077508;
+    background-color: var(--verdeClaro);
   }
 
   .contenedorArticulos {
@@ -147,6 +156,20 @@
 }
 
 @media (max-width: 480px) {
+  .contenedorVideo {
+    .contenedorTitulo {
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .nosotros {
+    p {
+      margin: 0;
+    }
+  }
+
   .links {
     display: flex;
     flex-direction: column;
