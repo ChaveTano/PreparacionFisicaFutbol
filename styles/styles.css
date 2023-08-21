@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+header {
+  max-width: 100%;
+}
+
 .navbar {
   padding: 0;
   margin: 0;
@@ -190,6 +194,7 @@
   background-color: var(--claro);
   border-radius: 1rem;
   box-shadow: 5px 5px 5px 10px var(--oscuro);
+  padding: 2rem;
 }
 .contenedorTrabajos h1 {
   color: white;
@@ -232,6 +237,7 @@
 
 .bodyStore {
   background-color: var(--claro);
+  min-height: 100vh;
 }
 
 .contenedorBuscador {
@@ -253,9 +259,9 @@
 .contenedorArticulos {
   background-color: var(--claro);
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: ". . . ." ". . . ." ". . . .";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: ". . . " ". . . " ". . . " ". . . ";
   gap: 2rem;
   margin: 0 2rem;
   padding-bottom: 1rem;
@@ -519,9 +525,9 @@ p {
   }
   .contenedorArticulos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: ". . ." ". . ." ". . ." ". . .";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: ". . " ". . " ". . " ". . " ". . " ". . ";
   }
   .contenedorTrabajos h1 {
     font-size: 1.5rem;
@@ -577,10 +583,9 @@ p {
     background-color: var(--claro);
   }
   .contenedorArticulos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: ". . " ". . " ". . " ". . " ". . " ". . ";
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
   .buscador {
     width: 50%;
@@ -631,11 +636,6 @@ p {
   }
   .buscador {
     width: 100%;
-  }
-  .contenedorArticulos {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
   }
   .contenedorTrabajos h3 {
     font-size: 1rem;

@@ -9,13 +9,16 @@
 
   .contenedorArticulos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
-      ". . ."
-      ". . ."
-      ". . ."
-      ". . .";
+      ". . "
+      ". . "
+      ". . "
+      ". . "
+      ". . "
+      ". . ";
+
   }
 
   .contenedorTrabajos {
@@ -98,16 +101,9 @@
   }
 
   .contenedorArticulos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas:
-      ". . "
-      ". . "
-      ". . "
-      ". . "
-      ". . "
-      ". . ";
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 
   .buscador {
@@ -178,12 +174,6 @@
 
   .buscador {
     width: 100%;
-  }
-
-  .contenedorArticulos {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
   }
 
   .contenedorTrabajos {
